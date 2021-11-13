@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "DinnrUI",
+    platforms: [.macOS(.v12), .iOS(.v15), .watchOS(.v8), .tvOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -20,7 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "DinnrUI",
-            dependencies: []),
+            dependencies: [],
+            resources: [.process("Colors.xcassets")]),
         .testTarget(
             name: "DinnrUITests",
             dependencies: ["DinnrUI"]),
