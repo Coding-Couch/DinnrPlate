@@ -5,7 +5,7 @@
 //  Created by Brent Mifsud on 2021-11-12.
 //
 
-@testable import DinnrUI
+@testable import DinnrPlate
 import SwiftUI
 import XCTest
 
@@ -20,8 +20,9 @@ class ColorExtensionsTest: XCTestCase {
 extension Color: CaseIterable {
     public static var allCases: [Color] {
         [
-            .background,
+            .primaryBackground,
             .secondaryBackground,
+            .tertiaryBackground,
             .accent,
             .text,
             .success,

@@ -1,3 +1,3 @@
-# DinnrUI
+# DinnrPlate
 
-A description of this package.
+This is the design system for the Dinnr App
